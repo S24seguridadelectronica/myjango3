@@ -25,7 +25,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'default_secret_key')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = ['yourdomain.com', 'https://myjango3-production.up.railway.app/', 'myjango3.railway.app']
+ALLOWED_HOSTS = [
+    'yourdomain.com',
+    'myjango3-production.up.railway.app',
+    'myjango3.railway.app'
+]
 
 # Application definition
 
