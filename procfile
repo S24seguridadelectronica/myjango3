@@ -1,5 +1,2 @@
-# Para el backend (Django)
-web: gunicorn myjango3.wsgi --log-file -
-
-# Para el frontend (React)
-frontend: npm start --prefix myreact
+web: cd myjango3 && gunicorn myjango3.wsgi --bind 0.0.0.0:$PORT
+frontend: cd myreact && npm start
