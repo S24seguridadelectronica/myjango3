@@ -1,2 +1,1 @@
-web: gunicorn myjango3.asgi:application
-frontend: cd myreact && npm start
+web: waitress-serve --port=$PORT myjango3.asgi:application
