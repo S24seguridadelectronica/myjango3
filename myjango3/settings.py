@@ -26,10 +26,13 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'default_secret_key')
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
 ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
     'yourdomain.com',
     'myjango3-production.up.railway.app',
     'myjango3.railway.app'
 ]
+
 
 # Application definition
 
