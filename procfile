@@ -1,1 +1,1 @@
-web: waitress-serve --port=$PORT myjango3.asgi:application
+web: gunicorn myjango3.wsgi --log-file -
